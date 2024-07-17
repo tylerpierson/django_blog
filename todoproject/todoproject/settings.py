@@ -105,9 +105,13 @@ USE_TZ = True
 
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
     "http://localhost:5004",
     "http://localhost:8000",  # Add this if your frontend and backend run on separate ports
+]
+
+CORS_ORIGIN_WHITELIST = [
+    'https://d3o6xv7vhbdh4p.cloudfront.net',  # Replace with your CloudFront URL
+    'http://localhost:5004'  # Add localhost if needed for local development
 ]
 
 

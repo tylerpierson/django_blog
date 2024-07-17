@@ -15,7 +15,7 @@ export default function App(){
     const createTodo = async () => {
         const body = {...newTodo}
         try {
-            const response = await fetch('http://localhost:8000/todos/', {
+            const response = await fetch('34.203.226.236:8000/todos/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ export default function App(){
     //deleteTodos
     const deleteTodo = async (id) => {
         try {
-            await fetch(`http://localhost:8000/todos/${id}/`, {
+            await fetch(`34.203.226.236:8000/todos/${id}/`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'
@@ -57,7 +57,7 @@ export default function App(){
             const todosCopy = [...todos]
             const subject = todosCopy[index]
             subject.completed = true 
-            const response = await fetch(`http://localhost:8000/todos/${id}/`, {
+            const response = await fetch(`34.203.226.236/todos/${id}/`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -76,7 +76,7 @@ export default function App(){
     //getTodos
     const getTodos = async () => {
         try {
-            const response = await fetch('http://localhost:8000/todos/');
+            const response = await fetch('34.203.226.236:8000/todos/');
             const todosData = await response.json();
             
             const foundTodos = todosData.filter(todo => !todo.completed);
