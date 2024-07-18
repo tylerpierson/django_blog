@@ -15,8 +15,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['34.203.226.236','localhost','d3ddbxp4qrmi9e.cloudfront.net']
 
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-SECURE_SSL_REDIRECT = True
 
 # Application definition
 
@@ -107,13 +105,13 @@ USE_TZ = True
 
 
 CORS_ALLOWED_ORIGINS = [
-    "https://34.203.226.236:5004",
-    "https://34.203.226.236:8000",  # Add this if your frontend and backend run on separate ports
+    "http://34.203.226.236:5004",
+    "http://34.203.226.236:8000",  # Add this if your frontend and backend run on separate ports
 ]
 
 CORS_ORIGIN_WHITELIST = [
     'https://d3o6xv7vhbdh4p.cloudfront.net',  # Replace with your CloudFront URL
-    'https://34.203.226.236:5004'  # Add localhost if needed for local development
+    'http://34.203.226.236:5004'  # Add localhost if needed for local development
 ]
 
 
