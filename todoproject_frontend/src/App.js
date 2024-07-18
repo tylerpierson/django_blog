@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import TodoList from './components/TodoList/TodoList';
 import styles from './App.module.scss';
 
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://34.203.226.236:8000';
+const API_BASE_URL = 'http://34.203.226.236:8000';
 
 export default function App() {
     const [todos, setTodos] = useState([]);
