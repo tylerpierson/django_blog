@@ -4,10 +4,20 @@
     color: rgb(0, 255, 60);
     border-radius: 9px;
     padding: 2rem;
-    border: .3rem solid rgb(0, 255, 60);
+    border: 0.3rem solid rgb(0, 255, 60);
     box-shadow: 0 0 30px rgb(0, 255, 60);
     background-color: rgba(0, 0, 0, 0.9);
     min-width: 600px;
+
+    @media (max-width: 768px) {
+        min-width: 90%;
+        padding: 1.5rem;
+    }
+    @media (max-width: 480px) {
+        min-width: 100%;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
 
     .input {
         color: rgb(0, 238, 255);
@@ -26,6 +36,15 @@
         &:focus {
             outline: none;
             box-shadow: 0 0 10px rgba(0, 238, 255, 0.8);
+        }
+
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+            height: 3rem;
+        }
+        @media (max-width: 480px) {
+            font-size: 1.2rem;
+            height: 2.5rem;
         }
     }
 }

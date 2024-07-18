@@ -5,6 +5,14 @@
     margin: 0.5rem 0;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+        font-size: 1.3rem;
+    }
+    @media (max-width: 480px) {
+        font-size: 1.1rem;
+    }
+
     button {
         background-color: #00bfff;
         text-transform: uppercase;
@@ -20,6 +28,15 @@
 
         &:hover {
             background-color: #0073e6;
+        }
+
+        @media (max-width: 768px) {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 480px) {
+            padding: 0.3rem 0.6rem;
+            font-size: 0.8rem;
         }
     }
 }
