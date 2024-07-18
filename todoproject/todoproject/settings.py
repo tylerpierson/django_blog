@@ -108,7 +108,7 @@ USE_TZ = True
 
 CORS_ALLOWED_ORIGINS = [
     "https://34.203.226.236:5004",
-    "http://34.203.226.236:8000",  # Add this if your frontend and backend run on separate ports
+    "https://34.203.226.236:8000",  # Add this if your frontend and backend run on separate ports
 ]
 
 CORS_ORIGIN_WHITELIST = [
