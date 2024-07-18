@@ -115,6 +115,8 @@ CORS_ORIGIN_WHITELIST = [
     "https://d3b53whrd0yq04.cloudfront.net",
 ]
 
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
