@@ -110,7 +110,9 @@ CORS_ALLOWED_ORIGINS = [
 
 CORS_ORIGIN_WHITELIST = [
     'http://d3o6xv7vhbdh4p.cloudfront.net',  # Replace with your CloudFront URL
-    'http://34.203.226.236:5004'  # Add localhost if needed for local development
+    'http://34.203.226.236:5004',  # Add localhost if needed for local development
+    "http://d3b53whrd0yq04.cloudfront.net",
+    "https://d3b53whrd0yq04.cloudfront.net",
 ]
 
 
